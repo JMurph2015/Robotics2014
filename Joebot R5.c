@@ -266,7 +266,7 @@ void load()
 	if((abs(SensorValue[armenc]) > 85)&&(abs(SensorValue[armenc]) < 105))
 	{
 		load1=0;
-		load2=-3;
+		load2=-10;
 		load3=0.12;
 	}
 	if(abs(SensorValue[armenc]) < 85)
