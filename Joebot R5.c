@@ -45,10 +45,10 @@ task main()
 	while(true)
 	{
 		load();
-		motor[rightback] = vexRT(Ch2);
-		motor[leftback] = vexRT(Ch3);
-		motor[leftfr] = vexRT(Ch3);
-		motor[rightfr] = vexRT(Ch2);
+		motor[rightback] = vexRT(Ch2)*0.80;
+		motor[leftback] = vexRT(Ch3)*0.80;
+		motor[leftfr] = vexRT(Ch3)*0.80;
+		motor[rightfr] = vexRT(Ch2)*0.80;
 		p1E = nMotorEncoder[port1];
 		p10E = -nMotorEncoder[port10];
 		if(vexRT[Btn6D]==1)
@@ -74,8 +74,8 @@ task main()
 		}
 		if(vexRT[Btn8D]==1)
 		{
-			motor[lbase]=5*load2;
-			motor[rbase]=5*load2;
+			motor[lbase]=10*load2;
+			motor[rbase]=10*load2;
 		}
 		if((vexRT[Btn8D]!=1)&&(vexRT[Btn8U]!=1))
 		{
